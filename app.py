@@ -31,7 +31,7 @@ def get_gemini_response(input_text=None, image=None):
 
     for entry in st.session_state.conversation:
         messages.chat_message("user").write(entry['user'])
-        if entry["image"]:
+        if "image" in entry and entry["image"]:
             st.image(entry["image"], caption="Uploaded Image", use_column_width=True)
         messages.chat_message("assistant").write(entry['assistant'])
 
