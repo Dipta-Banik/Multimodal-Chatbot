@@ -11,7 +11,7 @@ import heapq
 nltk.download('punkt_tab')
 nltk.download('stopwords')
 nltk.download('wordnet')
-nltk.download('averaged_perceptron_tagger')
+nltk.download('averaged_perceptron_tagger_eng')
 
 nlp = spacy.load("en_core_web_sm")
 
