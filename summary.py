@@ -8,7 +8,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import spacy
 import heapq
 
-nltk.download('punkt')
+nltk.download('punkt_tab')
 nltk.download('stopwords')
 nltk.download('wordnet')
 nltk.download('averaged_perceptron_tagger')
