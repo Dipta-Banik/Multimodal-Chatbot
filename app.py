@@ -13,9 +13,9 @@ os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
 
 def get_gemini_response(input_text=None, image=None):
-    model = genai.GenerativeModel("gemini-1.5-pro")
+    model = genai.GenerativeModel("gemini-2.5-pro")
     if input_text and image:
-        response = model.generate_content([input_text])
+        response = model.generate_content([input_text, image])
     elif input_text:
         response = model.generate_content(input_text)
     elif image:
